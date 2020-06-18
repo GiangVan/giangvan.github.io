@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Giang Văn</title>
+
+	<!-- bootstrap styles -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<style>
+		body {
+			background-color: black;
+			margin: auto 0;
+			padding: 100px;
+		}
+
+		.main {
+			width: 1654px;
+			height: 2339px;
+			background-color: white;
+		}
+
+		.avatar {
+			background-image: url(avatar_a.JPG);
+			width: 330px;
+			height: 330px;
+
+			box-shadow: 4px 4px 10px #0382b934, 4px 4px 10px rgba(0, 0, 0, .25) inset;
+
+		}
+
+		.img {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.sidebar {
+			background-color: #0382b9;
+			color: white;
+			width: 550px;
+			min-width: 550px;
+			font-size: 28px;
+		}
+
+		.article {
+			font-size: 24px;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: 52px;
+		}
+
+		.job-name {
+			font-size: 30px;
+		}
+
+		i {
+			font-size: 40px !important;
+			padding: 0 !important;
+		}
+
+		.tech-item {
+			width: 80px;
+			height: 80px;
+		}
+
+		.card-text {
+			white-space: pre-line;
+			word-break: break-word;
+		}
+	</style>
+
+	<div class="main d-flex">
+		<div class="h-100 sidebar d-flex flex-column align-items-center p-5 shadow">
+			<div class="avatar img rounded-circle mt-2 mb-5"></div>
+			<div class="name">Lê Văn Giang</div>
+			<div class="job-name">Web Full Stack (PHP)</div>
+
+			<div class="my-5 py-4 border-top border-bottom">
+				<div class="row m-0 align-items-center py-3">
+					<!-- location -->
+					<i class="col-2 fa fa-map-marker"></i>
+					<p class="col-10 m-0 p-0">99 Đường Man Thiện, Hiệp Phú, Quận 9, tp.Hồ Chí Minh</p>
+				</div>
+
+				<div class="row m-0 align-items-center py-3">
+					<!-- graduation -->
+					<i class="col-2 fa fa-graduation-cap"></i>
+					<p class="col-10 m-0 p-0">HUTECH</p>
+				</div>
+
+				<div class="row m-0 align-items-center py-3">
+					<!-- facabook -->
+					<i class="col-2 fa fa-facebook-square"></i>
+					<p class="col-10 m-0 p-0">/gianglee1998</p>
+				</div>
+
+				<div class="row m-0 align-items-center py-3">
+					<!-- github -->
+					<i class="col-2 fa fa-github"></i>
+					<p class="col-10 m-0 p-0">/GiangVan/giangvan.github.io</p>
+				</div>
+
+				<div class="row m-0 align-items-center py-3">
+					<!-- email -->
+					<i class="col-2 fa fa-envelope"></i>
+					<p class="col-10 m-0 p-0">giangvan1998work@gmail.com</p>
+				</div>
+
+				<div class="row m-0 align-items-center py-3">
+					<!-- phone -->
+					<i class="col-2 fa fa-phone"></i>
+					<p class="col-10 m-0 p-0">0965694603</p>
+				</div>
+			</div>
+
+			<!-- my tech list -->
+			<div class="w-100">
+				<h2 class="tech-title mb-4 text-center">Thường xuyên</h2>
+				<div class="d-flex flex-wrap">
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/php.png)"></div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/laravel.jpg)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/angular.jpg)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/bootstrap.png)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/html.png)"></div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/css.png)"></div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/js.png)"></div>
+				</div>
+			</div>
+			<div class="w-100 my-5 pb-5 border-bottom">
+				<h2 class="tech-title mb-4 text-center">Từng sử dụng</h2>
+				<div class="d-flex flex-wrap">
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/nodejs.jpg)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/mongodb.jpg)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/graphql.png)">
+					</div>
+					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/asp-mvc.jpg)">
+					</div>
+				</div>
+			</div>
+
+			<!-- skills -->
+
+			<div class="w-100">
+				<div class="row m-0 align-items-center py-3">
+					<!-- /// -->
+					<p class="col-4 m-0 py-2">Giao tiếp</p>
+					<div class="col-8 m-0">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-4 m-0 py-2">Làm việc nhóm</p>
+					<div class="col-8 m-0">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-4 m-0 py-2">Thuyết trình</p>
+					<div class="col-8 m-0">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-4 m-0 py-2">Quản lý thời gian</p>
+					<div class="col-8 m-0">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-4 m-0 py-2">Lên kế hoạch</p>
+					<div class="col-8 m-0">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="article h-100 p-5 flex-grow-1">
+			<div class="card shadow my-4">
+				<h2 class="card-header py-4">Chứng chỉ Agile & Scrum (24/07/2019)</h2>
+				<div class="card-body py-4">
+					<h4 class="card-title">DEK Technologies VietNam</h4>
+					<p class="card-text">Trong quá trình học tập tại trường, bên phía doanh nghiệp DEK Technologies phối
+						hợp với nhà trường mở lớp đào tạo ngắn hạn trong 2 tuần về Agile & Scrum.</p>
+					<p class="card-text">Sau cùng doanh nghiệp tổ chức thi cấp chứng chỉ.</p>
+					<a href="#" class="btn btn-primary mt-4">Có minh chứng ✓</a>
+				</div>
+			</div>
+
+			<div class="card shadow my-4 mt-5">
+				<h2 class="card-header py-4">Fresher (7 tháng)</h2>
+				<div class="card-body py-4">
+					<h4 class="card-title">CÔNG TY TNHH BITTO SOLUTION</h4>
+					<h5 class="card-title">08/2019 - 03/2020</h5>
+					<p class="mb-1">
+						Training PHP Laravel bằng dự án nội bộ (3 tháng).
+					</p>
+					<p class="m-0">
+						Làm Outsource PHP Laravel & Angular 2+ (4 tháng):
+					</p>
+					<p class="pl-4 m-0">
+						- Tham gia dựng giao diện web bằng Bootstrap.
+					</p>
+					<p class="pl-4 m-0">
+						- Viết xử lý phía client bằng Angular 2+.
+					</p>
+					<p class="pl-4 m-0">
+						- Viết APIs phía server bằng Laravel.
+					</p>
+					<p class="pl-4 m-0">
+						- Quản lý tasks và mã nguồn bằng GitLab.
+					</p>
+					<a href="#" class="btn btn-primary mt-5">Có minh chứng ✓</a>
+				</div>
+			</div>
+
+			<div class="card shadow my-4 mt-5">
+				<h2 class="card-header py-4">Đồ án tốt nghiệp (GAMING COMMUNITY)</h2>
+				<div class="card-body py-4">
+					<h4 class="card-title">Mạng xã hội cho game thủ</h4>
+					<h5 class="card-title">Công nghệ sử dụng: PHP Laravel, Bootstrap, Angular 2+, NodeJS, MongoDB,
+						GraphQL,...</h5>
+					<p class="pl-4 mb-1">
+						- Design giao diện web kết hợp custom Bootstrap:
+					</p>
+					<div class="img rounded-lg m-3"
+						style="height: 295px;width: 647px;background-image: url(imgs/demo1.png)"></div>
+					<p class="pl-4 mb-1">
+						- Sử dụng kiến trúc Microservices:
+					</p>
+					<div class="img rounded-lg m-3"
+						style="height: 500px;width: 500px;background-image: url(imgs/demo2.png)"></div>
+					<p class="pl-4">
+						- Mã nguồn: https://github.com/GammingCommunity
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
