@@ -77,11 +77,15 @@
 			white-space: pre-line;
 			word-break: break-word;
 		}
+
+		.bg-primary {
+			background-color: #0382b9 !important;
+		}
 	</style>
 
 	<div class="main d-flex">
 		<div class="h-100 sidebar d-flex flex-column align-items-center p-5 shadow">
-			<div class="avatar img rounded-circle mt-2 mb-5"></div>
+			<div class="avatar img rounded-circle mb-5"></div>
 			<div class="name">Lê Văn Giang</div>
 			<div class="job-name">Web Full Stack (PHP)</div>
 
@@ -107,7 +111,7 @@
 				<div class="row m-0 align-items-center py-3">
 					<!-- github -->
 					<i class="col-2 fa fa-github"></i>
-					<p class="col-10 m-0 p-0">/GiangVan/giangvan.github.io</p>
+					<p class="col-10 m-0 p-0">giangvan.github.io</p>
 				</div>
 
 				<div class="row m-0 align-items-center py-3">
@@ -125,7 +129,7 @@
 
 			<!-- my tech list -->
 			<div class="w-100">
-				<h2 class="tech-title mb-4 text-center">Thường xuyên</h2>
+				<h1 class="tech-title mb-4 text-center">Thành thạo</h1>
 				<div class="d-flex flex-wrap">
 					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/php.png)"></div>
 					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/laravel.jpg)">
@@ -201,20 +205,10 @@
 
 			</div>
 		</div>
-		<div class="article h-100 p-5 flex-grow-1">
-			<div class="card shadow my-4">
-				<h2 class="card-header py-4">Chứng chỉ Agile & Scrum (24/07/2019)</h2>
-				<div class="card-body py-4">
-					<h4 class="card-title">DEK Technologies VietNam</h4>
-					<p class="card-text">Trong quá trình học tập tại trường, bên phía doanh nghiệp DEK Technologies phối
-						hợp với nhà trường mở lớp đào tạo ngắn hạn trong 2 tuần về Agile & Scrum.</p>
-					<p class="card-text">Sau cùng doanh nghiệp tổ chức thi cấp chứng chỉ.</p>
-					<a href="#" class="btn btn-primary mt-4">Có minh chứng ✓</a>
-				</div>
-			</div>
+		<div class="article h-100 p-5 flex-grow-1 d-flex flex-column">
 
-			<div class="card shadow my-4 mt-5">
-				<h2 class="card-header py-4">Fresher (7 tháng)</h2>
+			<div class="rounded-lg card shadow-lg mt-5 mb-4">
+				<h2 class="card-header py-4 text-white bg-primary">Fresher (7 tháng)</h2>
 				<div class="card-body py-4">
 					<h4 class="card-title">CÔNG TY TNHH BITTO SOLUTION</h4>
 					<h5 class="card-title">08/2019 - 03/2020</h5>
@@ -240,24 +234,35 @@
 				</div>
 			</div>
 
-			<div class="card shadow my-4 mt-5">
+			<div class="rounded-lg card shadow-lg my-5">
+				<h2 class="card-header py-4 text-white bg-primary">Chứng chỉ Agile & Scrum (24/07/2019)</h2>
+				<div class="card-body py-4">
+					<h4 class="card-title">DEK Technologies VietNam</h4>
+					<p class="card-text">Trong quá trình học tập tại trường, bên phía doanh nghiệp DEK Technologies phối
+						hợp với nhà trường mở lớp đào tạo ngắn hạn trong 2 tuần về Agile & Scrum.</p>
+					<p class="card-text">Sau cùng doanh nghiệp tổ chức thi cấp chứng chỉ.</p>
+					<a href="#" class="btn btn-primary mt-4">Có minh chứng ✓</a>
+				</div>
+			</div>
+
+			<div class="rounded-lg card shadow-lg my-4">
 				<h2 class="card-header py-4">Đồ án tốt nghiệp (GAMING COMMUNITY)</h2>
 				<div class="card-body py-4">
 					<h4 class="card-title">Mạng xã hội cho game thủ</h4>
 					<h5 class="card-title">Công nghệ sử dụng: PHP Laravel, Bootstrap, Angular 2+, NodeJS, MongoDB,
 						GraphQL,...</h5>
 					<p class="pl-4 mb-1">
-						- Design giao diện web kết hợp custom Bootstrap:
+						- Design giao diện web kết hợp custom Bootstrap.
 					</p>
-					<div class="img rounded-lg m-3"
-						style="height: 295px;width: 647px;background-image: url(imgs/demo1.png)"></div>
 					<p class="pl-4 mb-1">
 						- Sử dụng kiến trúc Microservices:
 					</p>
-					<div class="img rounded-lg m-3"
-						style="height: 500px;width: 500px;background-image: url(imgs/demo2.png)"></div>
-					<p class="pl-4">
-						- Mã nguồn: https://github.com/GammingCommunity
+					<div class="d-flex justify-content-center my-5 m-3">
+						<div class="img rounded-lg "
+							style="height: 650px;width: 650px;background-image: url(imgs/demo2.png)"></div>
+					</div>
+					<p class="pl-4 mt-5">
+						- Mã nguồn: github.com/GammingCommunity
 					</p>
 				</div>
 			</div>
