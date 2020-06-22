@@ -28,11 +28,11 @@
 		}
 
 		.avatar {
-			background-image: url(imgs/avatar_a.jpg);
+			background-image: url(avatar_a.JPG);
 			width: 330px;
 			height: 330px;
 
-			box-shadow: 4px 4px 10px #0382b934, 4px 4px 10px rgba(0, 0, 0, .25) inset;
+			box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.25) inset !important;
 
 		}
 
@@ -45,22 +45,21 @@
 		.sidebar {
 			background-color: #0382b9;
 			color: white;
-			width: 550px;
-			min-width: 550px;
+			width: 600px;
+			min-width: 600px;
 			font-size: 28px;
 		}
 
 		.article {
-			font-size: 24px;
+			font-size: 26px;
 		}
 
 		.name {
-			font-weight: bold;
-			font-size: 52px;
+			font-size: 50px;
 		}
 
 		.job-name {
-			font-size: 30px;
+			font-size: 34px;
 		}
 
 		i {
@@ -68,14 +67,18 @@
 			padding: 0 !important;
 		}
 
-		.tech-item {
-			width: 80px;
-			height: 80px;
-		}
-
 		.card-text {
 			white-space: pre-line;
 			word-break: break-word;
+		}
+
+		.sidebar-footer {
+			font-size: 17px;
+		}
+
+		.btn-primary {
+			background-color: #0382b9 !important;
+			border-color: #0382b9 !important;
 		}
 
 		.bg-primary {
@@ -84,16 +87,16 @@
 	</style>
 
 	<div class="main d-flex">
-		<div class="h-100 sidebar d-flex flex-column align-items-center p-5 shadow">
-			<div class="avatar img rounded-circle mb-5"></div>
-			<div class="name">Lê Văn Giang</div>
-			<div class="job-name">Web Full Stack (PHP)</div>
+		<div class="h-100 sidebar d-flex flex-column align-items-center p-5">
+			<div class="avatar img rounded-circle mb-4"></div>
+			<div class="name">Le Van Giang</div>
+			<div class="job-name font-weight-bold text-warning pt-3 mb-4">Full Stack Web Developer</div>
 
 			<div class="my-5 py-4 border-top border-bottom">
 				<div class="row m-0 align-items-center py-3">
 					<!-- location -->
 					<i class="col-2 fa fa-map-marker"></i>
-					<p class="col-10 m-0 p-0">99 Đường Man Thiện, Hiệp Phú, Quận 9, tp.Hồ Chí Minh</p>
+					<p class="col-10 m-0 p-0">Man Thien street, Hiep Phu ward, District 9, Ho Chi Minh city.</p>
 				</div>
 
 				<div class="row m-0 align-items-center py-3">
@@ -105,13 +108,13 @@
 				<div class="row m-0 align-items-center py-3">
 					<!-- facabook -->
 					<i class="col-2 fa fa-facebook-square"></i>
-					<p class="col-10 m-0 p-0">/gianglee1998</p>
+					<p class="col-10 m-0 p-0">/giangvan1998</p>
 				</div>
 
 				<div class="row m-0 align-items-center py-3">
 					<!-- github -->
 					<i class="col-2 fa fa-github"></i>
-					<p class="col-10 m-0 p-0">giangvan.github.io</p>
+					<p class="col-10 m-0 p-0">/giangvan</p>
 				</div>
 
 				<div class="row m-0 align-items-center py-3">
@@ -128,142 +131,185 @@
 			</div>
 
 			<!-- my tech list -->
-			<div class="w-100">
-				<h1 class="tech-title mb-4 text-center">Thành thạo</h1>
-				<div class="d-flex flex-wrap">
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/php.png)"></div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/laravel.jpg)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/angular.jpg)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/bootstrap.png)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/html.png)"></div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/css.png)"></div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/js.png)"></div>
-				</div>
-			</div>
-			<div class="w-100 my-5 pb-5 border-bottom">
-				<h2 class="tech-title mb-4 text-center">Từng sử dụng</h2>
-				<div class="d-flex flex-wrap">
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/nodejs.jpg)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/mongodb.jpg)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/graphql.png)">
-					</div>
-					<div class="tech-item img rounded-lg m-3 shadow" style="background-image: url(imgs/asp-mvc.jpg)">
-					</div>
-				</div>
-			</div>
+			<h1 class="tech-title my-4 text-center"><u>My skills</u></h1>
 
 			<!-- skills -->
 
-			<div class="w-100">
-				<div class="row m-0 align-items-center py-3">
+			<div class="w-100 mb-4">
+				<div class="row m-0 align-items-center">
 					<!-- /// -->
-					<p class="col-4 m-0 py-2">Giao tiếp</p>
-					<div class="col-8 m-0">
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">PHP (Laravel)</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 88%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">Angular 2+</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 81%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">Bootstrap</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 74%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">HTML</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 71%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">CSS</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 90%;"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2 font-weight-bold">JavaScript</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
 						<div class="progress" style="height: 20px;">
 							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%;"
 								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
 					<!-- /// -->
-					<p class="col-4 m-0 py-2">Làm việc nhóm</p>
-					<div class="col-8 m-0">
+					<p class="col-5 px-0 m-0 p-2">C#</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
 						<div class="progress" style="height: 20px;">
-							<div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"
-								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							<div class="progress-bar bg-info" role="progressbar" style="width: 69%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
 					<!-- /// -->
-					<p class="col-4 m-0 py-2">Thuyết trình</p>
-					<div class="col-8 m-0">
+					<p class="col-5 px-0 m-0 py-2">NodeJS</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
 						<div class="progress" style="height: 20px;">
-							<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
-								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							<div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
 					<!-- /// -->
-					<p class="col-4 m-0 py-2">Quản lý thời gian</p>
-					<div class="col-8 m-0">
+					<p class="col-5 px-0 m-0 py-2">MongoDB</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
 						<div class="progress" style="height: 20px;">
-							<div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"
-								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							<div class="progress-bar bg-info" role="progressbar" style="width: 40%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
 					<!-- /// -->
-					<p class="col-4 m-0 py-2">Lên kế hoạch</p>
-					<div class="col-8 m-0">
+					<p class="col-5 px-0 m-0 py-2">GraphQL</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
 						<div class="progress" style="height: 20px;">
-							<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
-								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							<div class="progress-bar bg-info" role="progressbar" style="width: 42%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
 				</div>
-
 			</div>
+
+			<div class="w-100 border-top">
+				<div class="row m-0 align-items-center pt-4">
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2">Verbal</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2">Teamwork</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- /// -->
+					<p class="col-5 px-0 m-0 py-2">Sunum</p>
+					<div class="col-7 px-0 pt-1 m-0 shadow-sm">
+						<div class="progress" style="height: 20px;">
+							<div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="sidebar-footer m-0 mt-auto text-wrap text-center">
+				This site made by HTML, CSS & Bootstrap.
+				https://giangvan.github.io
+			</p>
+
 		</div>
 		<div class="article h-100 p-5 flex-grow-1 d-flex flex-column">
 
-			<div class="rounded-lg card shadow-lg mt-5 mb-4">
-				<h2 class="card-header py-4 text-white bg-primary">Fresher (7 tháng)</h2>
-				<div class="card-body py-4">
-					<h4 class="card-title">CÔNG TY TNHH BITTO SOLUTION</h4>
-					<h5 class="card-title">08/2019 - 03/2020</h5>
+			<div class="rounded-lg mx-3 card shadow-lg mt-4 mb-4">
+				<div class="card-header py-3 text-white bg-primary">Intern & Fresher</div>
+				<div class="card-body py-3">
+					<h3 class="card-title">BITTO SOLUTION Limited Liability Company</h3>
+					<h5 class="mb-4">08/2019 → 03/2020 (7 months)</h5>
 					<p class="mb-1">
-						Training PHP Laravel bằng dự án nội bộ (3 tháng).
+						At this company, I was trained by the internal project for <u>3 months</u> <br> (using <u>PHP Laravel</u>).
 					</p>
 					<p class="m-0">
-						Làm Outsource PHP Laravel & Angular 2+ (4 tháng):
+						For the remaining <u>4 months</u>, I was working on a project for a Singapo customer:
 					</p>
-					<p class="pl-4 m-0">
-						- Tham gia dựng giao diện web bằng Bootstrap.
+					<p class="pl-5 m-0">
+						- I participated in interface design with <u>Bootstrap</u>.
 					</p>
-					<p class="pl-4 m-0">
-						- Viết xử lý phía client bằng Angular 2+.
+					<p class="pl-5 m-0">
+						- Client-side programming using <u>Angular 2+</u>.
 					</p>
-					<p class="pl-4 m-0">
-						- Viết APIs phía server bằng Laravel.
+					<p class="pl-5 m-0">
+						- Server-side programming using <u>PHP Laravel</u>.
 					</p>
-					<p class="pl-4 m-0">
-						- Quản lý tasks và mã nguồn bằng GitLab.
-					</p>
-					<a href="#" class="btn btn-primary mt-5">Có minh chứng ✓</a>
+					<a href="#" class="shadow btn btn-primary mt-5">There is evidence ✓</a>
 				</div>
 			</div>
-
-			<div class="rounded-lg card shadow-lg my-5">
-				<h2 class="card-header py-4 text-white bg-primary">Chứng chỉ Agile & Scrum (24/07/2019)</h2>
-				<div class="card-body py-4">
-					<h4 class="card-title">DEK Technologies VietNam</h4>
-					<p class="card-text">Trong quá trình học tập tại trường, bên phía doanh nghiệp DEK Technologies phối
-						hợp với nhà trường mở lớp đào tạo ngắn hạn trong 2 tuần về Agile & Scrum.</p>
-					<p class="card-text">Sau cùng doanh nghiệp tổ chức thi cấp chứng chỉ.</p>
-					<a href="#" class="btn btn-primary mt-4">Có minh chứng ✓</a>
+			
+			<div class="rounded-lg mx-3 card shadow-lg my-5">
+				<div class="card-header py-3 text-white bg-primary"><u>Agile & Scrum</u></div>
+				<div class="card-body py-3">
+					<h3 class="card-title">DEK Technologies VietNam</h3>
+					<h5 class="mb-4">24/07/2019</h5>
+					<p class="card-text">The company collaborates with the school to create a short course of 2 weeks. Then holds a certification exam</p>
+					<a href="#" class="shadow btn btn-primary mt-4">There is evidence ✓</a>
 				</div>
 			</div>
-
-			<div class="rounded-lg card shadow-lg my-4">
-				<h2 class="card-header py-4">Đồ án tốt nghiệp (GAMING COMMUNITY)</h2>
-				<div class="card-body py-4">
-					<h4 class="card-title">Mạng xã hội cho game thủ</h4>
-					<h5 class="card-title">Công nghệ sử dụng: PHP Laravel, Bootstrap, Angular 2+, NodeJS, MongoDB,
-						GraphQL,...</h5>
-					<p class="pl-4 mb-1">
-						- Design giao diện web kết hợp custom Bootstrap.
-					</p>
-					<p class="pl-4 mb-1">
-						- Sử dụng kiến trúc Microservices:
-					</p>
+			
+			<div class="rounded-lg mx-3 card shadow-lg my-4">
+				<div class="card-header py-3">My project</div>
+				<div class="card-body py-3">
+					<h3 class="card-title">Gaming Community</h3>
+					<h5 class="mb-4">09/2019 → Now</h5>
+					<p class="mb-1">My friend and I are cherishing a dream about social networking for gamers</p>
+					<p class="mb-1">Tech list: PHP (Laravel), Bootstrap, Angular 2+, NodeJS, MongoDB, GraphQL,...</p>
+					<p >Microservices architecture:</p>
 					<div class="d-flex justify-content-center my-5 m-3">
 						<div class="img rounded-lg "
-							style="height: 650px;width: 650px;background-image: url(imgs/demo2.png)"></div>
+							style="height: 550px;width: 550px;background-image: url(imgs/demo2.png)"></div>
 					</div>
-					<p class="pl-4 mt-5">
-						- Mã nguồn: github.com/GammingCommunity
-					</p>
+
+					<div class="input-group mb-1">
+						<div class="input-group-prepend">
+							<span class="btn btn-outline-primary">Source codes</span>
+						</div>
+						<input type="text" class="form-control" placeholder="github.com/GammingCommunity">
+					</div>
 				</div>
 			</div>
 		</div>
