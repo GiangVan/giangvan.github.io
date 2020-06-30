@@ -14,121 +14,21 @@
 </head>
 
 <body>
-	<style>
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 200;
-			src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUbOvISTs.woff2) format('woff2');
-			unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		}
-
-		/* cyrillic */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 200;
-			src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUZevISTs.woff2) format('woff2');
-			unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		}
-
-		/* vietnamese */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 200;
-			src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUbuvISTs.woff2) format('woff2');
-			unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-		}
-
-		/* latin-ext */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 200;
-			src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUb-vISTs.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-
-		/* latin */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 200;
-			src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUYevI.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-
-		/* cyrillic-ext */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 600;
-			src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUbOvISTs.woff2) format('woff2');
-			unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		}
-
-		/* cyrillic */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 600;
-			src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUZevISTs.woff2) format('woff2');
-			unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		}
-
-		/* vietnamese */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 600;
-			src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUbuvISTs.woff2) format('woff2');
-			unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-		}
-
-		/* latin-ext */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 600;
-			src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUb-vISTs.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-
-		/* latin */
-
-		@font-face {
-			font-family: 'Nunito';
-			font-style: normal;
-			font-weight: 600;
-			src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevI.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-	</style>
 
 	<!-- my styles -->
 	<style>
 		body {
 			background-color: black;
-			font-family: 'Nunito', sans-serif;
 		}
 
 		.main-container {
-			background-color: white;
+			background-color: #f1e9e8;
 			padding: 10px;
 		}
 
 		@media (min-width:992px) {
 			.main-container {
-				padding: 85px 100px;
+				padding: 80px 100px;
 				width: 1654px;
 				height: 2339px;
 			}
@@ -138,8 +38,9 @@
 			color: unset !important;
 		}
 
-		p, body {
-			font-size: 22px;
+		p,
+		body {
+			font-size: 24px;
 		}
 
 		.bg-black {
@@ -147,6 +48,44 @@
 		}
 	</style>
 
+	<!-- custom bootstrap -->
+	<style>
+		.border-right {
+			border-right: 1px solid #012f2f !important;
+		}
+
+		.border-left {
+			border-left: 1px solid #012f2f !important;
+		}
+
+		.border-top {
+			border-top: 1px solid #012f2f !important;
+		}
+
+		.border-bottom {
+			border-bottom: 1px solid #012f2f !important;
+		}
+
+		.bg-dark {
+			background-color: #359E23 !important
+		}
+
+		.bg-black {
+			background-color: #EB2D1C !important
+		}
+
+		.card {
+			border: none !important;
+		}
+
+		.card-body {
+			background-color: #f1e9e8 !important;
+		}
+
+		.text-white {
+			color: #f1e9e8 !important;
+		}
+	</style>
 
 	<!-- main -->
 	<div class="main-container mx-auto my-lg-5 d-flex flex-column">
@@ -154,43 +93,197 @@
 		<header class="row">
 			<div class="col-lg-6 col-sm-12 d-flex flex-column border-right pr-lg-4">
 				<!-- main info -->
-				<h1 class="border-bottom pb-1 " style="font-size: 54px;">LE VAN GIANG</h1>
+				<h1 class="border-bottom pb-1 " style="font-size: 56px;">LE VAN GIANG</h1>
 				<h2 class="pt-1 mb-3">Full Stack Web Developer</h2>
 
 				<!-- contact -->
 				<div>
 					<!-- github -->
 					<div class="row mb-1">
-						<div class="col-1 d-lg-block d-sm-none">github</div>
-						<div class="col-1 d-lg-block d-sm-none">:</div>
-						<a href="https://github.com/giangvan" class="col-lg-10 col-sm-12"><div>github.com/giangvan</div></a>
+						<div class="col-2 d-lg-block d-sm-none">github</div>
+						<div class="col-2 d-lg-block d-sm-none">:</div>
+						<a href="https://github.com/giangvan" class="col-lg-8 col-sm-12">
+							<div>github.com/giangvan</div>
+						</a>
 					</div>
 
 					<!-- email -->
 					<div class="row mb-1">
-						<div class="col-1 d-lg-block d-sm-none">email</div>
-						<div class="col-1 d-lg-block d-sm-none">:</div>
-						<div class="col-lg-10 col-sm-12">giangvan1998work@gmail.com</div>
+						<div class="col-2 d-lg-block d-sm-none">email</div>
+						<div class="col-2 d-lg-block d-sm-none">:</div>
+						<div class="col-lg-8 col-sm-12">giangvan1998work@gmail.com</div>
 					</div>
 
 					<!-- phone -->
 					<div class="row mb-1">
-						<div class="col-1 d-lg-block d-sm-none">phone</div>
-						<div class="col-1 d-lg-block d-sm-none">:</div>
-						<div class="col-lg-10 col-sm-12">0965694603</div>
+						<div class="col-2 d-lg-block d-sm-none">phone</div>
+						<div class="col-2 d-lg-block d-sm-none">:</div>
+						<div class="col-lg-8 col-sm-12">0965694603</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-sm-12 pl-lg-4 mt-4">
-				<h3 class="mb-3">ABOUT ME</h3>
+			<div class="col-lg-6 col-sm-12 pl-lg-4 mt-3">
+				<h2 class="mb-3">ABOUT ME</h2>
 				<div class="text-wrap">I am an introvert.
 					I have experience working in a start-up company about outsourcing. I wanna develop myself to stronger and faster. I decided to change my path, find the bigger company, meeting masters, focus to working process, technology and development.
 				</div>
 			</div>
 		</header>
 		<!-- article -->
-		<article class="border-top border-bottom py-5 my-4 mx-0 flex-grow-1 row">
-			<div class="col-lg-4 col-sm-12 pr-lg-5 mb-sm-5 mb-lg-0 border-right">
+		<article class="border-top py-5 my-4 mx-0 flex-grow-1 row">
+
+			<div class="col-lg-8 col-sm-12 pr-lg-5 mb-sm-5 mb-lg-0 border-right">
+
+				<div class="rounded-lg overflow-hidden card shadow mb-5">
+					<h3 class="card-header pt-2 text-white bg-black">WORKING EXPERIENCE</h3>
+					<div class="card-body py-3 px-lg-3 px-sm-1">
+						<div class="row">
+							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center"
+								style="padding-top: 2px;">
+								06/2019
+								<br>
+								↓
+								<br>
+								04/2020
+							</h5>
+							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
+								<h4>BITTO SOLUTION Limited Company</h4>
+								<div class="row mb-1">
+									<div class="col-3">
+										<p class="m-0">Roles:</p>
+									</div>
+									<div class="col-9">
+										<p class="m-0">Intern, Developer.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-sm-12">
+										<p class="m-0">Achievements:</p>
+									</div>
+									<div class="col-lg-9 col-sm-12">
+										<p class="m-0">Experience with <u>PHP (Laravel)</u>,
+											<u>HTML-CSS-Jquery</u>,
+											<u>Bootstrap</u>,
+											<u>Angular 2+</u>; MySQL, Postgresql;
+											read/writing UML documents; use tool
+											Gitlab/TortoiseGit, Redmine and
+											working with Agile process.</p>
+									</div>
+								</div>
+
+								<h5 class="mt-2">MAAS Edu Project</h5>
+								<div class="row mb-1">
+									<div class="col-3">
+										<p class="m-0">Roles:</p>
+									</div>
+									<div class="col-9">
+										<p class="m-0">Developer.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-sm-12">
+										<p class="m-0">Achievements:</p>
+									</div>
+									<div class="col-lg-9 col-sm-12">
+										<p class="m-0">- I participated in interface design with Bootstrap.</p>
+										<p class="m-0">- Client-side programming using Angular 2+.</p>
+										<p class="m-0">- Server-side programming using PHP Laravel.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rounded-lg overflow-hidden card shadow mb-5">
+					<h3 class="card-header pt-2 text-white bg-black">EDUCATION AND QUALIFICATION</h3>
+					<div class="card-body py-3 px-lg-3 px-sm-1">
+						<div class="row pb-3 border-bottom">
+							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-lg-0 mb-sm-4 text-center"
+								style="padding-top: 3px;">
+								2016
+								<br>
+								↓
+								<br>
+								2020
+							</h5>
+							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
+								<h4>University of Technology (HUTECH)</h4>
+								<div class="row mb-1">
+									<div class="col-lg-3 col-sm-12">
+										<p class="m-0">Major:</p>
+									</div>
+									<div class="col-lg-9 col-sm-12">
+										<p class="m-0">Software Engineering.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 col-sm-12">
+										<p class="m-0">Achievements:</p>
+									</div>
+									<div class="col-lg-9 col-sm-12">
+										<p class="m-0">- Thinking programming.</p>
+										<p class="m-0">- Analysis and Design of Information Systems.</p>
+										<p class="m-0">- Presentation.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row pt-3">
+							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center"
+								style="padding-top: 3px;">
+								24/07/2019
+							</h5>
+							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
+								<h4>Certificate of Agile & Scrum</h4>
+								<div class="row">
+									<div class="col-lg-3 col-sm-12">
+										<p class="m-0">Issused by:</p>
+									</div>
+									<div class="col-lg-9 col-sm-12">
+										<p class="m-0">DEK Technologies VietNam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rounded-lg overflow-hidden card shadow mb-5">
+					<h3 class="card-header pt-2 text-white bg-black">CAREER PATH</h3>
+					<div class="card-body py-3 px-lg-3 px-sm-1">
+						<p class="pb-2 border-bottom">Become the Scrum Master in the next 3.5 years.</p>
+						<p class="m-0">With my friends, starting up a company about social networking for gamers.</p>
+					</div>
+				</div>
+
+				<div class="rounded-lg overflow-hidden card shadow">
+					<h3 class="card-header pt-2 text-white bg-dark">MY PROJECT</h3>
+					<div class="card-body py-3 px-lg-3 px-sm-1">
+						<div class="row">
+							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center"
+								style="padding-top: 3px;">
+								06/2019
+								<br>
+								↓
+								<br>
+								Now
+							</h5>
+							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
+								<h4>GAMING COMMUNITY</h4>
+								<p class="m-0">My friends and I are a dreaming about social networking for gamers.</p>
+								<p class="m-0">List of Technologies we are using in this project: PHP (Laravel),
+									Bootstrap,
+									Angular 2+, NodeJS, MongoDB, GraphQL,...</p>
+								<p class="">Using <u>Microservices</u> architecture.</p>
+								<h5 class="m-0">Source code: github.com/GammingCommunity</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-12 pl-lg-5">
 				<!-- skills -->
 				<h3 class="mb-4">SKILLS</h3>
 				<div class="">
@@ -300,166 +393,21 @@
 					<p class="mb-2">Playing piano.</p>
 					<p class="m-0">Listening to music.</p>
 				</div>
+
+				<div class="w-100 my-5 pr-lg-5 border-top"></div>
+
+				<!-- footer -->
+				<footer class="mb-sm-5 text-center" style="font-size: 18px;">
+					This site made by HTML, CSS & Bootstrap.
+					<br>
+					<a href="https://giangvan.github.io">https://giangvan.github.io</a>
+					<br>
+					All intents to copy please contact me!
+				</footer>
 			</div>
-			<div class="col-lg-8 col-sm-12 pl-lg-5">
 
-				<div class="rounded-lg overflow-hidden card shadow mb-5">
-					<h3 class="card-header pt-2 text-white bg-dark">WORKING EXPERIENCE</h3>
-					<div class="card-body py-3 px-lg-3 px-sm-1">
-						<div class="row">
-							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center" style="padding-top: 2px;">
-								06/2019
-								<br>
-								↓
-								<br>
-								04/2020
-							</h5>
-							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
-								<h4>BITTO SOLUTION Limited Company</h4>
-								<div class="row mb-1">
-									<div class="col-3">
-										<p class="m-0">Roles:</p>
-									</div>
-									<div class="col-9">
-										<p class="m-0">Intern, Developer.</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-3 col-sm-12">
-										<p class="m-0">Achievements:</p>
-									</div>
-									<div class="col-lg-9 col-sm-12">
-										<p class="m-0">Experience with <u>PHP (Laravel)</u>,
-											<u>HTML-CSS-Jquery</u>,
-											<u>Bootstrap</u>,
-											<u>Angular 2+</u>; MySQL, Postgresql;
-											read/writing UML documents; use tool
-											Gitlab/TortoiseGit, Redmine and
-											working with Agile process.</p>
-									</div>
-								</div>
-
-								<h5 class="mt-2">MAAS Edu Project</h5>
-								<div class="row mb-1">
-									<div class="col-3">
-										<p class="m-0">Roles:</p>
-									</div>
-									<div class="col-9">
-										<p class="m-0">Developer.</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-3 col-sm-12">
-										<p class="m-0">Achievements:</p>
-									</div>
-									<div class="col-lg-9 col-sm-12">
-										<p class="m-0">I participated in interface design with Bootstrap.</p>
-										<p class="m-0">Client-side programming using Angular 2+.</p>
-										<p class="m-0">Server-side programming using PHP Laravel.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="rounded-lg overflow-hidden card shadow mb-5">
-					<h3 class="card-header pt-2 text-white bg-dark">EDUCATION AND QUALIFICATION</h3>
-					<div class="card-body py-3 px-lg-3 px-sm-1">
-						<div class="row pb-3 border-bottom">
-							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-lg-0 mb-sm-4 text-center"
-								style="padding-top: 3px;">
-								2016
-								<br>
-								↓
-								<br>
-								2020
-							</h5>
-							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
-								<h4>University of Technology (HUTECH)</h4>
-								<div class="row mb-1">
-									<div class="col-lg-3 col-sm-12">
-										<p class="m-0">Major:</p>
-									</div>
-									<div class="col-lg-9 col-sm-12">
-										<p class="m-0">Software Engineering.</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-3 col-sm-12">
-										<p class="m-0">Achievements:</p>
-									</div>
-									<div class="col-lg-9 col-sm-12">
-										<p class="m-0">Thinking programming.</p>
-										<p class="m-0">Analysis and Design of Information Systems.</p>
-										<p class="m-0">Presentation.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row pt-3">
-							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center" style="padding-top: 3px;">
-								24/07/2019
-							</h5>
-							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
-								<h4>Certificate of Agile & Scrum</h4>
-								<div class="row">
-									<div class="col-lg-3 col-sm-12">
-										<p class="m-0">Issused by:</p>
-									</div>
-									<div class="col-lg-9 col-sm-12">
-										<p class="m-0">DEK Technologies VietNam.</p>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</div>
-				</div>
-
-				<div class="rounded-lg overflow-hidden card shadow mb-5">
-					<h3 class="card-header pt-2 text-white bg-dark">CAREER PATH</h3>
-					<div class="card-body py-3 px-lg-3 px-sm-1">
-						<p class="pb-2 border-bottom">Become the Scrum Master in the next 3.5 years.</p>
-						<p class="m-0">With my friends, starting up a company about social networking for gamers.</p>
-					</div>
-				</div>
-
-				<div class="rounded-lg overflow-hidden card shadow">
-					<h3 class="card-header pt-2">MY PROJECT</h3>
-					<div class="card-body py-3 px-lg-3 px-sm-1">
-						<div class="row">
-							<h5 class="col-lg-2 col-sm-12 pl-0 pr-lg-2 pr-sm-0 mb-sm-4 text-center" style="padding-top: 3px;">
-								06/2019
-								<br>
-								↓
-								<br>
-								Now
-							</h5>
-							<div class="border-left col-lg-10 col-sm-12 m-0 pl-lg-3 pl-sm-1 pr-0">
-								<h4>GAMING COMMUNITY</h4>
-								<p class="m-0">My friends and I are a dreaming about social networking for gamers.</p>
-								<p class="m-0">List of Technologies we are using in this project: PHP (Laravel),
-									Bootstrap,
-									Angular 2+, NodeJS, MongoDB, GraphQL,...</p>
-								<p class="m-0">Using <u>Microservices</u> architecture.</p>
-								<div class="input-group mb-lg-2 mt-4">
-									<div class="input-group-prepend d-lg-block d-sm-none">
-										<span class="btn btn-outline-dark">Source codes</span>
-									</div>
-									<input type="text" class="form-control" value="github.com/GammingCommunity">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</article>
-		<!-- footer -->
-		<footer class="text-center mb-sm-5" style="font-size: 18px;">
-			This site made by HTML, CSS & Bootstrap (<a href="https://giangvan.github.io">https://giangvan.github.io</a>).
-			<br>
-			All intents to copy please contact me!
-		</footer>
+
 	</div>
 
 </body>
